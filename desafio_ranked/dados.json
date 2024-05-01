@@ -1,0 +1,102 @@
+[
+  {
+    "nome": "Jogador1",
+    "vitoria": 1000,
+    "derrota": 500
+  },
+  {
+    "nome": "Jogador2",
+    "vitoria": 8,
+    "derrota": 3
+  },
+  {
+    "nome": "Jogador3",
+    "vitoria": 120,
+    "derrota": 6
+  },
+  {
+    "nome": "Jogador4",
+    "vitoria": 6,
+    "derrota": 9
+  },
+  {
+    "nome": "Jogador5",
+    "vitoria": 15,
+    "derrota": 2
+  },
+  {
+    "nome": "Jogador6",
+    "vitoria": 10,
+    "derrota": 50
+  },
+  {
+    "nome": "Jogador7",
+    "vitoria": 80,
+    "derrota": 30
+  },
+  {
+    "nome": "Jogador8",
+    "vitoria": 120,
+    "derrota": 6
+  },
+  {
+    "nome": "Jogador9",
+    "vitoria": 100,
+    "derrota": 9
+  },
+  {
+    "nome": "Jogador10",
+    "vitoria": 15,
+    "derrota": 2
+  },
+  {
+    "nome": "Jogador11",
+    "vitoria": 300,
+    "derrota": 200
+  },
+  {
+    "nome": "Jogador12",
+    "vitoria": 50,
+    "derrota": 20
+  },
+  {
+    "nome": "Jogador13",
+    "vitoria": 80,
+    "derrota": 10
+  },
+  {
+    "nome": "Jogador14",
+    "vitoria": 700,
+    "derrota": 100
+  },
+  {
+    "nome": "Jogador15",
+    "vitoria": 150,
+    "derrota": 30
+  },
+  {
+    "nome": "Jogador16",
+    "vitoria": 20,
+    "derrota": 40
+  },
+  {
+    "nome": "Jogador17",
+    "vitoria": 400,
+    "derrota": 60
+  },
+  {
+    "nome": "Jogador18",
+    "vitoria": 90,
+    "derrota": 25
+  },
+  {
+    "nome": "Jogador19",
+    "vitoria": 200,
+    "derrota": 80
+  },
+  {
+    "nome": "Jogador20",
+    "vitoria": 300,
+    "derrota": 150
+  }
+]
