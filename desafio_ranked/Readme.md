@@ -1,3 +1,25 @@
+# Calculadora de Nível de Jogador
+
+Esta é uma aplicação simples de calculadora de nível de jogador, onde você pode selecionar um jogador e calcular o seu nível com base nas vitórias e derrotas.
+
+## Como Testar
+
+Para testar a aplicação, siga estas etapas:
+
+1. Acesse o [link da aplicação](https://funny-sable-c6be5c.netlify.app/).
+
+2. Selecione um jogador na lista suspensa.
+
+3. Clique no botão "Calcular Nível".
+
+4. O resultado será exibido abaixo do botão, indicando o saldo de vitórias e derrotas do jogador e o seu nível.
+
+Experimente diferentes jogadores para ver como o nível varia com base nas vitórias e derrotas.
+
+Divirta-se calculando o nível dos jogadores!
+
+
+
 Instruções para entrega
  # 2️⃣ Calculadora de partidas Rankeadas
 **O Que deve ser utilizado**
