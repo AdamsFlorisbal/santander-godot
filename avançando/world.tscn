@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://cioulbynfnd0n"]
+
+[ext_resource type="PackedScene" uid="uid://bnvlptabooicf" path="res://objects/player.tscn" id="1_0shky"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_cjjp3"]
+[ext_resource type="PackedScene" uid="uid://bnbo4eb4okk6w" path="res://objects/player2.tscn" id="2_3sx4o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhmga"]
+size = Vector2(1151, 20)
+
+[node name="World" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_cjjp3")
+object_templates = Array[PackedScene]([ExtResource("2_3sx4o"), ExtResource("1_0shky")])
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 637.0
+color = Color(0.0745098, 0.67451, 1, 1)
+
+[node name="RigidBody2D" parent="." instance=ExtResource("1_0shky")]
+position = Vector2(647, 140)
+
+[node name="RigidBody2D2" parent="." instance=ExtResource("1_0shky")]
+position = Vector2(445, 148)
+
+[node name="RigidBody2D3" parent="." instance=ExtResource("1_0shky")]
+position = Vector2(255, 154)
+
+[node name="RigidBody2D4" parent="." instance=ExtResource("1_0shky")]
+position = Vector2(445, 242)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(11, 625)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(564.5, 0)
+shape = SubResource("RectangleShape2D_rhmga")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D"]
+offset_left = -576.5
+offset_top = -11.0
+offset_right = -11.5
+offset_bottom = 29.0
+scale = Vector2(2, 2)
+metadata/_edit_use_anchors_ = true
+
+[node name="RigidBody2D5" parent="." instance=ExtResource("2_3sx4o")]
+position = Vector2(124, 252)
+mass = 1000.0
+physics_material_override = null
+gravity_scale = 1.0
+linear_damp = 0.0
+
+[node name="RigidBody2D6" parent="." instance=ExtResource("2_3sx4o")]
+position = Vector2(120, 154)
+mass = 1000.0
+physics_material_override = null
+gravity_scale = 1.0
+linear_damp = 0.0
