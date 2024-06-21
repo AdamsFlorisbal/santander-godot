@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ebhlcwjdo374"]
+
+[ext_resource type="Script" path="res://enemies/enemy.gd" id="1_5qfvp"]
+[ext_resource type="Texture2D" uid="uid://dk7tevjuhymdm" path="res://addons/Tiny Swords/Factions/Goblins/Troops/TNT/Blue/TNT_Blue.png" id="2_6ebje"]
+
+[node name="Enemygen" type="Node2D"]
+script = ExtResource("1_5qfvp")
+
+[node name="TntBlue" type="Sprite2D" parent="."]
+position = Vector2(1, -29)
+scale = Vector2(0.670759, 0.899306)
+texture = ExtResource("2_6ebje")
+hframes = 7
+vframes = 3
