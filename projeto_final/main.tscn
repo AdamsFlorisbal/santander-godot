@@ -255,8 +255,6 @@ position = Vector2(-9.0625, 5681)
 shape = SubResource("RectangleShape2D_ul6ld")
 debug_color = Color(0.959711, 2.21401e-06, 0.520105, 0.42)
 
-[node name="GameUI" parent="." instance=ExtResource("2_13bsh")]
-
 [node name="difficulty_system" type="Node" parent="." node_paths=PackedStringArray("mob_spawner")]
 script = ExtResource("13_k113g")
 mob_spawner = NodePath("../MobSpawner")
@@ -335,3 +333,20 @@ position = Vector2(691, 823)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(564, 337)
+
+[node name="GameUI" parent="." instance=ExtResource("2_13bsh")]
+
+[node name="GameOverUI" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameOverUI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.752941)
+
+[node name="TextureRect" type="TextureRect" parent="GameOverUI"]
+offset_right = 40.0
+offset_bottom = 40.0
