@@ -5,3 +5,4 @@
 [node name="Meat" instance=ExtResource("1_gbocu")]
 self_modulate = Color(5.405, 2.162, 0, 1)
 scale = Vector2(1.5, 1.5)
+regeneration_amount = 100
