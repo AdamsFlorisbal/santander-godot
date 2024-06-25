@@ -335,18 +335,3 @@ position = Vector2(691, 823)
 position = Vector2(564, 337)
 
 [node name="GameUI" parent="." instance=ExtResource("2_13bsh")]
-
-[node name="GameOverUI" type="CanvasLayer" parent="."]
-visible = false
-
-[node name="ColorRect" type="ColorRect" parent="GameOverUI"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 0.752941)
-
-[node name="TextureRect" type="TextureRect" parent="GameOverUI"]
-offset_right = 40.0
-offset_bottom = 40.0
