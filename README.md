@@ -19,11 +19,7 @@ Este projeto foi criado como parte do Santander Bootcamp 2024 em colaboração c
 5. Mecânicas e Interatividade em Jogos com Godot
 6. Soft Skills na Era Ágil: Conectando Pessoas e Oportunidades
 
-### Bootcamp Timeline:
-- **Prazo de inscrição**: 8 de abril
-- **Confirmação de participação**: 15 de abril
-- **Acesso ao bootcamp**: 23 de abril
-- **Período de estudo**: 24 de abril a 8 de julho
+
 
 ## Benefits
 - Ideal para iniciantes, pessoas em transição de carreira e profissionais que buscam melhores oportunidades em desenvolvimento de software.
