@@ -1,7 +1,9 @@
-[gd_scene load_steps=30 format=3 uid="uid://ccnfy5ocdu6wa"]
+[gd_scene load_steps=32 format=3 uid="uid://ccnfy5ocdu6wa"]
 
+[ext_resource type="Script" path="res://main.gd" id="1_ldwgl"]
 [ext_resource type="PackedScene" uid="uid://bde0jlck61cdp" path="res://player/player.tscn" id="1_xjsnh"]
 [ext_resource type="PackedScene" uid="uid://brw0ho76keplr" path="res://ui/game_ui.tscn" id="2_13bsh"]
+[ext_resource type="PackedScene" uid="uid://coilnta6k4usp" path="res://ui/game_over_ui.tscn" id="2_sy60i"]
 [ext_resource type="PackedScene" uid="uid://p2vk0twwwl8r" path="res://systems/mob_spawner.tscn" id="3_1p1wk"]
 [ext_resource type="Texture2D" uid="uid://ws1vyo1ylijw" path="res://addons/Tiny Swords/Terrain/Ground/Tilemap_Flat.png" id="4_1axbo"]
 [ext_resource type="Texture2D" uid="uid://btu8tbipjlr0n" path="res://addons/Tiny Swords/Deco/01.png" id="5_wkpm0"]
@@ -199,8 +201,11 @@ size = Vector2(9683.88, 746)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xxbs4"]
 size = Vector2(793, 5346.25)
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" node_paths=PackedStringArray("game_ui")]
 y_sort_enabled = true
+script = ExtResource("1_ldwgl")
+game_ui = NodePath("GameUI")
+game_over_ui_template = ExtResource("2_sy60i")
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1

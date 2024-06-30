@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://coilnta6k4usp"]
+[gd_scene load_steps=11 format=3 uid="uid://coilnta6k4usp"]
 
 [ext_resource type="Texture2D" uid="uid://cu48qh4ctofaq" path="res://addons/Tiny Swords/UI/Ribbons/Ribbon_Red_3Slides.png" id="1_j6em7"]
+[ext_resource type="Script" path="res://ui/game_over_ui.gd" id="1_ny514"]
 [ext_resource type="Texture2D" uid="uid://bx1xa65vtyixf" path="res://addons/Tiny Swords/UI/Banners/Banner_Horizontal.png" id="2_1drxc"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g5s2g"]
@@ -113,6 +114,7 @@ _data = {
 }
 
 [node name="GameOverUI" type="CanvasLayer"]
+script = ExtResource("1_ny514")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -177,7 +179,8 @@ layout_mode = 2
 text = "Time survived:"
 label_settings = SubResource("LabelSettings_7rt6o")
 
-[node name="TimeSurvive2" type="Label" parent="BottonPanel/CenterContainer/GridContainer"]
+[node name="TimeLabel" type="Label" parent="BottonPanel/CenterContainer/GridContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 text = "12:00"
 label_settings = SubResource("LabelSettings_7rt6o")
@@ -187,7 +190,8 @@ layout_mode = 2
 text = "Monster kill:"
 label_settings = SubResource("LabelSettings_7rt6o")
 
-[node name="MonsterKill2" type="Label" parent="BottonPanel/CenterContainer/GridContainer"]
+[node name="MonsterLabel" type="Label" parent="BottonPanel/CenterContainer/GridContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 text = "100
 "
@@ -197,3 +201,4 @@ label_settings = SubResource("LabelSettings_7rt6o")
 libraries = {
 "": SubResource("AnimationLibrary_b4v4k")
 }
+autoplay = "Defaut"

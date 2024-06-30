@@ -8,6 +8,8 @@ var time: float = 0.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if GameManager.is_game_over: return
+	
 	time += delta
 	var spawn_rate = initial_spawm_rate + spaw_rate_per_minute * (time / 60)
 	
